@@ -10,7 +10,8 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center" style ="min-height: 100vh">
 
-        <form class = "border shadow p-3" style="width: 450px">
+        <form class = "border shadow p-3" action="php/check-login.php" method="post" style="width: 450px">
+
         <h1 class="text-center p-3">LOGIN</h1>
             <div class="mb-3">
                 <label for="username" class="form-label">User name</label>
