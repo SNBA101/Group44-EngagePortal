@@ -10,7 +10,7 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center" style ="min-height: 100vh">
 
-        <form class = "border shadow p-3" action="php/check-login.php" method="post" style="width: 450px">
+        <form class = "border shadow p-3" action="loginPhp\check-login.php" method="post" style="width: 450px">
 
         <h1 class="text-center p-3">LOGIN</h1>
             <div class="mb-3">
@@ -27,7 +27,7 @@
                 <label class="form-label">Select User Type:</label>
                 
             </div>
-            <select class="form-select mb-3" aria-label="Default select example">
+            <select class="form-select mb-3" name="role" aria-label="Default select example">
                 <option selected value="user">User</option>
                 <option value="admin">Admin</option>
 
