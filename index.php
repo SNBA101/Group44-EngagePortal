@@ -13,6 +13,15 @@
         <form class = "border shadow p-3" action="loginPhp\check-login.php" method="post" style="width: 450px">
 
         <h1 class="text-center p-3">LOGIN</h1>
+        <?php if (isset($_GET['error'])){ ?>
+
+            
+        
+       
+        <div class="alert alert-danger" role="alert">
+            <?=$_GET['error']?>
+        </div>
+        <?php }?>
             <div class="mb-3">
                 <label for="username" class="form-label">User name</label>
                 <input type="text" class="form-control" name="username" id="username">

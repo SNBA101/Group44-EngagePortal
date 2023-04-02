@@ -17,7 +17,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
     }else if(empty($password)){
         header("Location: ../index.php?error=Password is required");
     }else {
-        echo "Cool!";
+        
     }
 
 
