@@ -15,7 +15,7 @@
       	<?php if ($_SESSION['role'] == 'admin') {?>
       		<!-- For Admin -->
       		<div class="card" style="width: 18rem;">
-			  <img src="img/admin-default.png" 
+			  <img src="img/admin.png" 
 			       class="card-img-top" 
 			       alt="admin image">
 			  <div class="card-body text-center">
@@ -26,7 +26,7 @@
 			  </div>
 			</div>
 			<div class="p-3">
-				<?php include 'php/members.php';
+				<?php include 'loginphp/members.php';
                  if (mysqli_num_rows($res) > 0) {?>
                   
 				<h1 class="display-4 fs-1">Members</h1>
@@ -58,9 +58,9 @@
       	<?php }else { ?>
       		<!-- FORE USERS -->
       		<div class="card" style="width: 18rem;">
-			  <img src="img/user-default.png" 
+			  <img src="img/user.png" 
 			       class="card-img-top" 
-			       alt="admin image">
+			       alt="user image">
 			  <div class="card-body text-center">
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
