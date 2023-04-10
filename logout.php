@@ -8,13 +8,4 @@ header("Location: index.php");
 
 
 
-
-
-
-
-
-
-
-
-
 ?>
