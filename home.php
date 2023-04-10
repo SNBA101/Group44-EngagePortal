@@ -24,8 +24,30 @@
                         <?=$_SESSION['name']?>
                     </h5>
                     
-                    <a href="#" class="btn btn-dark">Logout</a>
+                    <a href="logout.php" class="btn btn-dark">Logout</a>
                 </div>
+            </div>
+            <div class="p-3">
+                <?php include 'php/members.php' ?> 
+                <h1 class="display-4 fs-1">Members</h1>
+                <table class="table" style="width: 32rem ">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">User name</th>
+                        <th scope="col">Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
       <?php } ?>
     </div>
