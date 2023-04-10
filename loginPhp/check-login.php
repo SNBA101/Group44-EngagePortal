@@ -1,5 +1,6 @@
 <?php
-include "db_conn.php";
+session_start()
+include "../db_conn.php";
 
 if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role'])){
     function test_input($data) {
@@ -24,14 +25,22 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
         $sql = "SELECT * FROM users WHERE username='$username' AND password='$password' ";
 
         $result = mysqli_query($conn, $sql);
-        
+
         if (mysqli_num_rows($result) === 1){
             //the user name must be unique
             $row = mysqli_fetch_assoc($result);
-            echo "<pre>";
-            print_r($row);
-        }else{
-            echo"Not working";
+            if($row['password'] === $password && $row['role'] == $role){
+                $_SESSION['name'] = $row['name'];
+                $_SESSION['id'] = $row['id'];
+                $_SESSION['role'] = $row['role'];
+                $_SESSION['username'] = $row['username'];
+
+                header("Location: ../home.php");
+            }else {
+                header("Location: ../index.php?error=Inccorect User name or Password");
+            }
+        }else {
+            header("Location: ../index.php?error=Inccorect User name or Password");
         }
     }
 
