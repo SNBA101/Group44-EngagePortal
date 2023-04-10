@@ -1,6 +1,6 @@
 <?php  
 
-$sname = "172.21.224.1";
+$sname = "127.0.0.1";
 $uname = "Group44";
 $password = "";
 
