@@ -1,0 +1,7 @@
+Admin:
+Username = Elias
+password = 1234
+
+User:
+Username = John
+password = abcd
