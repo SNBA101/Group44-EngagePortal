@@ -18,11 +18,13 @@
        <?php if ($_SESSION['role'] == 'admin'){ ?>
             <!-- For Admin -->
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                <img src="img/admin.png" class="card-img-top" alt="admin image">
+                <div class="card-body text-center">
+                    <h5 class="card-title">
+                        <?=$_SESSION['name']?>
+                    </h5>
                     
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-dark">Logout</a>
                 </div>
             </div>
       <?php } ?>
