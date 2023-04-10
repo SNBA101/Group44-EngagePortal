@@ -1,7 +1,7 @@
 <?php  
 
-$sname = "localhost";
-$uname = "root";
+$sname = "172.21.224.1";
+$uname = "Group44";
 $password = "";
 
 $db_name = "engageportal_db";
@@ -13,5 +13,4 @@ if (!$conn) {
 	exit();
 }
 
-//for the login
 ?>
