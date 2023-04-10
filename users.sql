@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2023 at 08:17 PM
+-- Generation Time: Apr 11, 2023 at 12:37 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `role` enum('user','admin','manager') NOT NULL,
+  `role` enum('user','admin') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL
@@ -40,8 +40,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `username`, `password`, `name`) VALUES
-(1, 'admin', 'John', '81dc9bdb52d04dc20036dbd8313ed055', 'John Carlson'),
-(2, 'user', 'Elton', 'e2fc714c4727ee9395f324cd2e7f331f\r\n', 'Elton Parsley');
+(1, 'admin', 'Elias', '81dc9bdb52d04dc20036dbd8313ed055', 'Elias Abudurrahm'),
+(2, 'user', 'John', 'e2fc714c4727ee9395f324cd2e7f331f', 'John Doe');
 
 --
 -- Indexes for dumped tables
