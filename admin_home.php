@@ -1,11 +1,13 @@
 <?php
 // establish database connection
-$servername = "localhost";
-$username = "Elias";
-$password = "1234";
-$dbname = "database.sql";
+$sname = "127.0.0.1";
+$uname = "Group44";
+$password = "";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$db_name = "engageportal_db";
+
+$conn = mysqli_connect($sname, $uname, $password, $db_name);
+
 
 // check connection
 if (!$conn) {
@@ -13,7 +15,7 @@ if (!$conn) {
 }
 
 // retrieve user data from database
-$sql = "SELECT * FROM employee_info";
+$sql = "SELECT * FROM employees";
 $result = mysqli_query($conn, $sql);
 
 // display user data in table
