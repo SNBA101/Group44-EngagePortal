@@ -26,7 +26,7 @@
 				<li class="nav"><a class="nav" href="announcements2.php">View Announcements</a></li>
 				<li class="nav"><a class="nav" href="training_material.php">View Training Material</a></li>
 				<li class="nav"><a class="nav" href="payslips.php">View Payslips</a></li>
-				<li class="nav"><a class="nav" href="feedback.html">Give feedback</a></li>
+				<li class="nav"><a class="nav" href="feedback.php">Give feedback</a></li>
 				<li class="nav"><a class="nav" href="my_info.php">View Your Personal Information</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">
@@ -47,7 +47,7 @@
 				<li class="nav"><a class="nav" href="announcements2.php">View Announcements</a></li>
 				<li class="nav"><a class="nav" href="training_material.php">View Training Material</a></li>
 				<li class="nav"><a class="nav" href="payslips.php">View Payslips</a></li>
-				<li class="nav"><a class="nav" href="feedback.html">Give feedback</a></li>
+				<li class="nav"><a class="nav" href="feedback.php">Give feedback</a></li>
 				<li class="nav"><a class="nav" href="my_info.php">View Your Personal Information</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">

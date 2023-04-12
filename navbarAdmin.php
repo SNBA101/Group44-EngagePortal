@@ -15,6 +15,7 @@
     <li class="nav-item"><a href="my_info.php" class="nav-link">Contact Information</a></li>
     <li class="nav-item"><a href="training_material.php" class="nav-link">Training Material</a></li>
     <li class="nav-item"><a href="payslips.php" class="nav-link">Payslips</a></li>
+    <li class="nav-item"><a href="feedback.php" class="nav-link">feedhack</a></li>
   </ul>
 </nav>
 

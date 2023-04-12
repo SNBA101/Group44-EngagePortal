@@ -2,7 +2,7 @@
    session_start();
    include "db_conn.php";
    if (isset($_SESSION['username']) && isset($_SESSION['id'])) {  $username = $_SESSION['username']; 
-   include "navbar.php"
+   
    ?>
 
   
@@ -44,6 +44,7 @@
       echo "<td>".$row['jobrole']."</td>";
       echo "</tr>";
    }
+   include "navbar.php"
 ?>
    </table>
 
