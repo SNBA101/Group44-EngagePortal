@@ -15,7 +15,10 @@
       style="min-height: 100vh">
       	<?php if ($_SESSION['role'] == 'admin') {?>
       		<!-- For Admin -->
-	      	<a href="admin_home.php">View User Table</a>
+	      	<ul>
+				<li><a href="admin_home.php">View User Table</a></li>
+				<li><a href="announcement.php">View Announcements</a></li>
+			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/admin.png" 
 			       class="card-img-top" 
