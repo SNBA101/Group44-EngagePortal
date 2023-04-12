@@ -13,9 +13,9 @@ $result = $conn->query($sql);
 
 // Display the payslips in a table
 if ($result->num_rows > 0) {
-    echo "<table><tr><th>Pay Period</th><th>Pay Date</th><th>Net Pay</th></tr>";
+    echo "<table><tr><th>Pay Period</th><th>Pay Date</th><th>Net Pay</th><th>Name</th></tr>";
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["pay_period"] . "</td><td>" . $row["pay_date"] . "</td><td>" . $row["net_pay"] . "</td></tr>";
+        echo "<tr><td>" . $row["pay_period"] . "</td><td>" . $row["pay_date"] . "</td><td>" . $row["net_pay"] . "</td><td>" . $row["name"] . "</td></tr>";
     }
     echo "</table>";
 } else {

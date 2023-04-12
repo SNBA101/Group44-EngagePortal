@@ -20,6 +20,8 @@
 				<li><a href="announcement.php">View Announcements</a></li>
 				<li><a href="training_material.php">View Training Material</a></li>
 				<li><a href="payslips.php">View Payslips</a></li>
+				<li><a href="feedback.html">Give feedback</a></li>
+				<li><a href="contact_info.html">View Your Personal Information</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/admin.png" 
