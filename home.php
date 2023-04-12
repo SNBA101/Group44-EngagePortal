@@ -18,6 +18,7 @@
 	      	<ul>
 				<li><a href="admin_home.php">View User Table</a></li>
 				<li><a href="announcement.php">View Announcements</a></li>
+				<li><a href="download.php">View Training Material</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/admin.png" 
