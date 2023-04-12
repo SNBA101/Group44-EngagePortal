@@ -14,7 +14,7 @@
 <head>
 	<title>Personal Information</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
    <table>
@@ -48,7 +48,7 @@
 
 <button class="open-button" onclick="openForm()">Edit Information</button>
 
-<div class="form-popup" id="updateForm">
+<div class="form-popup form-select" id="updateForm">
    <p>Keep any fields you would like to keep the same blank and click update.<p>
 
    <form method="post" action="update_info.php">
@@ -68,8 +68,8 @@
    <label for="address">Address</label>
    <input type="text" name="address" id="address">
 
-   <button type="submit" value="Update">Update</button>
-   <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
+   <button id="updateForm" type="submit" value="Update">Update</button>
+   <button class="cancel" type="button" class="cancel" onclick="closeForm()">Cancel</button>
    </form>
 </div>
 

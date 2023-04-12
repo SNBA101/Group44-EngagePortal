@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Training Material</title>
+	<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 	<h1>Training Material</h1>
