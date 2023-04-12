@@ -1,18 +1,8 @@
 <?php
 // Connect to the database
-$sname = "127.0.0.1";
-$uname = "Group44";
-$password = "";
-
-$db_name = "engageportal_db";
-
-$conn = mysqli_connect($sname, $uname, $password, $db_name);
-
-
-// check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+session_start();
+   include "db_conn.php";
+   if (isset($_SESSION['username']) && isset($_SESSION['id']))
 
 // Get the user's username
 $username = $_SESSION['username'];

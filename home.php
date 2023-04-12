@@ -19,6 +19,7 @@
 				<li><a href="admin_home.php">View User Table</a></li>
 				<li><a href="announcement.php">View Announcements</a></li>
 				<li><a href="training_material.php">View Training Material</a></li>
+				<li><a href="payslips.php">View Payslips</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/admin.png" 
@@ -63,6 +64,11 @@
 			</div>
       	<?php }else { ?>
       		<!-- FORE USERS -->
+			  <ul>
+				<li><a href="announcement.php">View Announcements</a></li>
+				<li><a href="training_material.php">View Training Material</a></li>
+				<li><a href="payslips.php">View Payslips</a></li>
+			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/user.png" 
 			       class="card-img-top" 
