@@ -1,7 +1,7 @@
 <?php 
    session_start();
    include "db_conn.php";
-   if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
+   if (isset($_SESSION['username']) && isset($_SESSION['id'])) {  $username = $_SESSION['username']; ?>
 
 <!DOCTYPE html>
 <html>
@@ -29,7 +29,8 @@
       </tr>
 
 <?php
-   $query = "SELECT * FROM users";
+   
+   $query = "SELECT * FROM users WHERE id = '{$_SESSION['id']}'";
    $result = mysqli_query($conn, $query);
    while($row = mysqli_fetch_array($result)) {
       echo "<tr>";
