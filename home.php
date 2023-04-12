@@ -6,23 +6,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOME</title>
+	<title>Home</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+	<div class="wrap">
+	<video class="fog" playsinline autoplay muted loop>
+		<source src="img/fog.mp4" type="video/mp4" /> 
+	</video>
+	</div>
       <div class="container d-flex justify-content-center align-items-center"
       style="min-height: 100vh">
       	<?php if ($_SESSION['role'] == 'admin') {?>
       		<!-- For Admin -->
 			
-	      	<ul>
-				<li><a href="admin_home.php">View User Table</a></li>
-				<li><a href="announcements2.php">View Announcements</a></li>
-				<li><a href="training_material.php">View Training Material</a></li>
-				<li><a href="payslips.php">View Payslips</a></li>
-				<li><a href="feedback.html">Give feedback</a></li>
-				<li><a href="my_info.php">View Your Personal Information</a></li>
+	      	<ul class="nav">
+				<li class="nav"><a class="nav" href="admin_home.php">View User Table</a></li>
+				<li class="nav"><a class="nav" href="announcements2.php">View Announcements</a></li>
+				<li class="nav"><a class="nav" href="training_material.php">View Training Material</a></li>
+				<li class="nav"><a class="nav" href="payslips.php">View Payslips</a></li>
+				<li class="nav"><a class="nav" href="feedback.html">Give feedback</a></li>
+				<li class="nav"><a class="nav" href="my_info.php">View Your Personal Information</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/admin.png" 
@@ -32,18 +37,18 @@
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
 			    </h5>
-			    <a href="logout.php" class="btn btn-dark">Logout</a>
+			    <button onclick="location.href='logout.php';" class="logout">Logout</button>
 			  </div>
 			</div>
 			
       	<?php }else { ?>
       		<!-- FORE USERS -->
-			  <ul>
-				<li><a href="announcements2.php">View Announcements</a></li>
-				<li><a href="training_material.php">View Training Material</a></li>
-				<li><a href="payslips.php">View Payslips</a></li>
-				<li><a href="feedback.html">Give feedback</a></li>
-				<li><a href="my_info.php">View Your Personal Information</a></li>
+			  <ul class="nav">
+				<li class="nav"><a class="nav" href="announcements2.php">View Announcements</a></li>
+				<li class="nav"><a class="nav" href="training_material.php">View Training Material</a></li>
+				<li class="nav"><a class="nav" href="payslips.php">View Payslips</a></li>
+				<li class="nav"><a class="nav" href="feedback.html">Give feedback</a></li>
+				<li class="nav"><a class="nav" href="my_info.php">View Your Personal Information</a></li>
 			</ul>
       		<div class="card" style="width: 18rem;">
 			  <img src="img/user.png" 
@@ -53,7 +58,7 @@
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
 			    </h5>
-			    <a href="logout.php" class="btn btn-dark">Logout</a>
+			    <button onclick="location.href='logout.php';" class="logout">Logout</button>
 			  </div>
 			</div>
       	<?php } ?>
