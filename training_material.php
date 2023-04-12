@@ -4,6 +4,9 @@
 	<title>Training Material</title>
 	<link rel="stylesheet" href="style.css"> 
 </head>
+<?php 
+include "navbar.php";
+?>
 <body>
 	<h1>Training Material</h1>
 	<ul>

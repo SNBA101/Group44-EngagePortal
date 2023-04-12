@@ -7,6 +7,9 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
+<?php 
+include "navbar.php";
+?>
 <body>
     <div class="feedback">
     <form class="feedbackForm">

@@ -1,10 +1,11 @@
 <?php 
    session_start();
    include "db_conn.php";
-   if (isset($_SESSION['username']) && isset($_SESSION['id'])) {  $username = $_SESSION['username']; ?>
+   if (isset($_SESSION['username']) && isset($_SESSION['id'])) {  $username = $_SESSION['username']; 
+   include "navbar.php"
+   ?>
 
-<!DOCTYPE html>
-<html>
+  
 <style>
 /* Hide form by default */
 .form-popup {

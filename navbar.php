@@ -15,6 +15,3 @@
     <li class="nav-item"><a href="training_material.php" class="nav-link">Training Material</a></li>
     <li class="nav-item"><a href="payslips.php" class="nav-link">Payslips</a></li>
 </nav>
-
-</body>
-</html>

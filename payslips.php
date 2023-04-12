@@ -2,6 +2,7 @@
 // Connect to the database
 session_start();
    include "db_conn.php";
+   include "navbar.php";
    if (isset($_SESSION['username']) && isset($_SESSION['id']))
 
 // Get the user's username

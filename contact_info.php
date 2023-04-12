@@ -4,6 +4,9 @@
 	<title>Employee Contact Information</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+<?php 
+include "navbar.php";
+?>
 <body>
 	<h1>Employee Contact Information</h1>
 	<form action="" method="post">
