@@ -26,7 +26,7 @@ include "navbar.php";
 		} else {
 		    // Display the list of files as links
 		    foreach ($files as $file) {
-		        echo '<li><a href="' . $folder_path . '/' . $file . '">' . $file . '</a></li>';
+		        echo '<li><a href="' . $folder_path . '/' . $file . '">' . $file . ' - click to download</a></li>';
 		    }
 		}
 		?>

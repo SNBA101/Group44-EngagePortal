@@ -1,6 +1,8 @@
 /* Global styles */
 *{
   color: white;
+  justify-items: center;
+  align-items: center;
 }
 body {
   font-family: Arial, sans-serif;
