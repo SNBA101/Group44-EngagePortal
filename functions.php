@@ -1,11 +1,35 @@
 <?php
 // functions.php
-require_once 'db_conn.php';
 
-function isAdmin($user_id) { // Replace this function with your own admin checking logic
-  // Example: Check if user is an admin
-  // This is just an example, you should implement your own admin checking mechanism
-  return $user_id == 1; // Assuming user with ID 1 is the admin
+include 'db_conn.php';
+
+function isAdmin($username) {
+  global $conn; 
+  
+  // Prepare SQL statement
+  $sql = "SELECT role FROM users WHERE username = ?";
+  $stmt = mysqli_prepare($conn, $sql);
+
+  // Bind parameters and execute statement
+  mysqli_stmt_bind_param($stmt, "s", $username);
+  mysqli_stmt_execute($stmt);
+
+  // Get result
+  $result = mysqli_stmt_get_result($stmt);
+
+  // Check if user is an admin
+  if ($row = mysqli_fetch_assoc($result)) {
+    if ($row["role"] == "admin") {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+
+  // Close statement and connection
+  mysqli_stmt_close($stmt);
 }
 
 function getAnnouncements() {

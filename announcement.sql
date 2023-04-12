@@ -1,9 +1,0 @@
-CREATE DATABASE announcements;
-
-
-CREATE TABLE employee_info (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL UNIQUE,
-    body VARCHAR(1000) NOT NULL UNIQUE,
-    date VARCHAR(20) NOT NULL,
-);
