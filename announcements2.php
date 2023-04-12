@@ -4,7 +4,7 @@ session_start();  // Assuming you're using PHP sessions for user authentication
 require_once 'db_conn.php';
 require_once 'functions.php';
 
-$user_id = $_SESSION['user_id']; // Assuming the user ID is stored in the session
+$user_id = $_SESSION['username']; // Assuming the user ID is stored in the session
 $isAdmin = isAdmin($user_id);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $isAdmin) {

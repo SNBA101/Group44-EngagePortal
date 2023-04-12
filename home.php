@@ -17,7 +17,7 @@
       		<!-- For Admin -->
 	      	<ul>
 				<li><a href="admin_home.php">View User Table</a></li>
-				<li><a href="announcement.php">View Announcements</a></li>
+				<li><a href="announcements2.php">View Announcements</a></li>
 				<li><a href="training_material.php">View Training Material</a></li>
 				<li><a href="payslips.php">View Payslips</a></li>
 				<li><a href="feedback.html">Give feedback</a></li>
@@ -67,7 +67,7 @@
       	<?php }else { ?>
       		<!-- FORE USERS -->
 			  <ul>
-				<li><a href="announcement.php">View Announcements</a></li>
+				<li><a href="announcements2.php">View Announcements</a></li>
 				<li><a href="training_material.php">View Training Material</a></li>
 				<li><a href="payslips.php">View Payslips</a></li>
 				<li><a href="feedback.html">Give feedback</a></li>
