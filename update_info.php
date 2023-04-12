@@ -36,7 +36,7 @@ if (!empty($address)) {
 $sql = rtrim($sql, ", ");
 
 //Optionally add verification at the end, I have decided to keep this out for now
-// $sql .= " WHERE id='$id'";
+$sql .= " WHERE id = '{$_SESSION['id']}'";
 
 // Execute SQL query
 $result = mysqli_query($conn, $sql);
