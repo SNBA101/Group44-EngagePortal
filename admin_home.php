@@ -15,7 +15,7 @@ if (!$conn) {
 }
 
 // retrieve user data from database
-$sql = "SELECT * FROM employees";
+$sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);
 
 // display user data in table
