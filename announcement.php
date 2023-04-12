@@ -12,17 +12,17 @@
   <button type="submit">Post Announcement</button>
 </form>
 
-  function validateForm() {
-    var name = document.getElementById("announcement_name").value;
-    var body = document.getElementById("announcement_body").value;
+function validateForm() {
+  var name = document.getElementById("announcement_name").value;
+  var body = document.getElementById("announcement_body").value;
 
-    if (name == "" || body == "") {
-      alert("Please fill out all fields.");
-      return false;
-    }
-    
-    return true;
+  if (name == "" || body == "") {
+    alert("Please fill out all fields.");
+    return false;
   }
+  
+  return true;
+}
 
 <button type="submit" onclick="return validateForm()">Post Announcement</button>
 
